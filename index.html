@@ -129,5 +129,15 @@
     <div id="lightbox" onclick="closeLightbox()">
     <img id="lightbox-img">
 </div>
+    <script>
+function openLightbox(img){
+    document.getElementById('lightbox').style.display = 'flex';
+    document.getElementById('lightbox-img').src = img.src;
+}
+
+function closeLightbox(){
+    document.getElementById('lightbox').style.display = 'none';
+}
+</script>
 </body>
 </html>
